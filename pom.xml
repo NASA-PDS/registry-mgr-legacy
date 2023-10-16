@@ -164,7 +164,7 @@ POSSIBILITY OF SUCH DAMAGE.
     <dependency>
       <groupId>net.sf.saxon</groupId>
       <artifactId>Saxon-HE</artifactId>
-      <version>9.9.1-7</version>
+      <version>11.6</version>
     </dependency>
   </dependencies>
 
