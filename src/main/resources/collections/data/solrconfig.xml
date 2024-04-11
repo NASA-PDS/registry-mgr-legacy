@@ -843,14 +843,13 @@
        <str name="f.facet_instrument.facet.prefix">1,</str>
        <str name="f.facet_primary_result_purpose.facet.prefix">1,</str>
        <str name="f.facet_primary_result_processing_level.facet.prefix">1,</str>
-
-      <!-- Update params to include filter query restricting to latest product versions -->
-      <str name="fq">{!collapse field=lid max=version_id_normalized}</str>
     </lst>
 
     <!-- Ignore superseded data sets by appending a filter to the query -->
     <lst name="appends">
       <str name="tr">data-search.xsl</str>
+      <!-- Update params to include filter query restricting to latest product versions -->
+      <str name="fq">{!collapse field=lid max=version_id_normalized}</str>
       <str name="fq">-archive_status:SUPERSEDED</str>
       <!-- Filter out Observational and Document products and all of the various  -->
       <str name="fq">-data_product_type:Product_Observational</str>
